@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+@theme {
+  --color-sky: #129FE3;
+  --color-sky-ink: #0B77B0;
+  --color-lime: #D8FF4F;
+  --color-gray-soft: #F5F6F7;
+  --color-navy: #080D16;
+  --color-charcoal: #303640;
+  --color-muted: #5B6470;
+
+  --font-display: "Bebas Neue", "Oswald", Impact, "Arial Narrow", sans-serif;
+  --font-sans: Inter, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-accent: Georgia, "Times New Roman", Cambria, serif;
+}
+
+:root {
+  --sky: #129FE3;
+  --sky-ink: #0B77B0;
+  --lime: #D8FF4F;
+  --white: #FFFFFF;
+  --gray-soft: #F5F6F7;
+  --navy: #080D16;
+  --charcoal: #303640;
+  --text-muted: #5B6470;
+  font-synthesis: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--charcoal);
+  background-color: #F8F9FA;
+  overflow-x: hidden;
+}
+
+/* Bebas display headings typography rules */
+.font-display {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.015em;
+  line-height: 0.95;
+  text-transform: uppercase;
+}
+
+/* Italic Serif Accent in headings */
+.accent-blue {
+  font-family: var(--font-accent);
+  font-style: italic;
+  font-weight: 400;
+  color: var(--sky-ink);
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+.accent-white {
+  font-family: var(--font-accent);
+  font-style: italic;
+  font-weight: 400;
+  color: #FFFFFF;
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F1F3F5;
+}
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

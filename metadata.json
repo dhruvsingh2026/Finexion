@@ -1,0 +1,6 @@
+{
+  "name": "Finexa — AI-Powered Personal Finance",
+  "description": "Finexa brings your balances, transactions, and goals into one place, with AI-driven insights to manage, move, and grow your money.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
